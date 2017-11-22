@@ -7,7 +7,7 @@ public class OenScheduler {
     ArrayList<Task> tasks = new ArrayList<Task>();
 
     public Task schedule(){
-        int minTime = Integer.MAX_VALUE,maxPriority = 0,maxPriorityIndex = 0;
+        int minTime = Integer.MAX_VALUE,maxPriority = -1,maxPriorityIndex = 0;
         ArrayList<Integer> minTimeIndexs = new ArrayList<Integer>();
         if(tasks.isEmpty())
             return null;
